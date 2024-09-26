@@ -272,8 +272,6 @@ parse_input_file() {
             continue
         fi
 
-        echo "This is the line $line"
-
         # Skip comment lines
         if printf '%s\n' "$line" | grep -q -e "^#"
         then
