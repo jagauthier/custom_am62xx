@@ -5,6 +5,7 @@ poky,https://git.yoctoproject.org/poky,scarthgap,HEAD,layers=meta:meta-poky:meta
 meta-openembedded,https://github.com/openembedded/meta-openembedded,scarthgap,HEAD,layers=meta-oe:meta-python:meta-webserver
 meta-arm,https://git.yoctoproject.org/meta-arm,scarthgap,HEAD,layers=meta-arm-toolchain:meta-arm:meta-arm-bsp
 meta-warp-am62xx,https://github.com/jagauthier/meta-warp-am62xx.git,main,HEAD,layers=meta-am62xx-bsp
+meta-proxima,https://github.com/jagauthier/meta-proxima.git,main,HEAD,layers=
 
 OECORELAYERCONF=./templates/bblayers.conf.sample
 OECORELOCALCONF=./templates/local-am62x.conf.sample

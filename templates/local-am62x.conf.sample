@@ -59,7 +59,7 @@ DEPLOY_DIR = "${TOPDIR}/deploy"
 # You need to select a specific machine to target the build with. There are a selection
 # of emulated machines available which can boot and run in the QEMU emulator:
 #
-MACHINE ?= "mach-am62x"
+MACHINE ?= "warp-am62x"
 
 #
 # Package Management configuration
@@ -174,11 +174,16 @@ BB_HASHSERVE = "auto"
 INHERIT += "buildhistory"
 BUILDHISTORY_COMMIT = "1"
 
-# EXTRA_IMAGE_FEATURES:append = " dev-pkgs tools-sdk tools-debug tools-sdk"
+EXTRA_IMAGE_FEATURES = "debug-tweaks"
+# development stuff
+#EXTRA_IMAGE_FEATURES:append = " dev-pkgs tools-sdk tools-debug tools-sdk"
 
-# IMAGE_INSTALL:append = " python3 python3-numpy python3-pip python3-pyserial python3-websockets python3-aiohttp"
-# IMAGE_INSTALL:append = " python3-configargparse python3-gunicorn python3-matplotlib python3-pycurl"
+IMAGE_INSTALL:append = " kernel-modules rt-tests"
 
-# MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "kernel-modules"
+# Python stuff
+#IMAGE_INSTALL:append = " python3 python3-numpy python3-fastapi python3-pip python3-pyserial python3-uvicorn python3-websockets python3-aiohttp"
+#IMAGE_INSTALL:append = " python3-configargparse python3-gunicorn python3-matplotlib python3-pycurl"
 
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "rt-tests"
+# Misc stuff
+IMAGE_INSTALL:append = " openssh cmake e2fsprogs elfutils i2c-tools make strace gdb nano"
+
