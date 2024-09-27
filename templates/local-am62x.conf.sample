@@ -175,8 +175,9 @@ INHERIT += "buildhistory"
 BUILDHISTORY_COMMIT = "1"
 
 EXTRA_IMAGE_FEATURES = "debug-tweaks"
+DISTRO_FEATURES:append = " virtualization"
 
-
+DEFAULT_TIMEZONE = "America/New_York"
 
 
 
