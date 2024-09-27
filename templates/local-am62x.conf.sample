@@ -179,5 +179,4 @@ DISTRO_FEATURES:append = " virtualization"
 
 DEFAULT_TIMEZONE = "America/New_York"
 
-
-
+INIT_MANAGER = "systemd"
