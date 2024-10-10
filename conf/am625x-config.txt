@@ -1,10 +1,10 @@
 # This file takes repo entries in the format
 # repo name,repo uri,repo branch,repo commit[,layers=layer1:layer2...:layern]
 
-poky,https://git.yoctoproject.org/poky,scarthgap,HEAD,layers=meta:meta-poky:meta-yocto-bsp
-meta-openembedded,https://github.com/openembedded/meta-openembedded,scarthgap,HEAD,layers=meta-oe:meta-python:meta-webserver:meta-networking:meta-filesystems
-meta-arm,https://git.yoctoproject.org/meta-arm,scarthgap,HEAD,layers=meta-arm-toolchain:meta-arm:meta-arm-bsp
-meta-virtualization,https:///git.yoctoproject.org/meta-virtualization,scarthgap,HEAD,layers=
+poky,https://git.yoctoproject.org/poky,styhead,HEAD,layers=meta:meta-poky:meta-yocto-bsp
+meta-openembedded,https://github.com/openembedded/meta-openembedded,styhead,HEAD,layers=meta-oe:meta-python:meta-webserver:meta-networking:meta-filesystems
+meta-arm,https://git.yoctoproject.org/meta-arm,styhead,HEAD,layers=meta-arm-toolchain:meta-arm:meta-arm-bsp
+meta-virtualization,https:///git.yoctoproject.org/meta-virtualization,styhead,HEAD,layers=
 meta-warp-am62xx,https://github.com/jagauthier/meta-warp-am62xx.git,main,HEAD,layers=meta-am62xx-bsp
 meta-proxima,https://github.com/jagauthier/meta-proxima.git,main,HEAD,layers=
 
